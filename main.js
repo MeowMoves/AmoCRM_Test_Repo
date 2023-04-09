@@ -49,9 +49,9 @@ define(['jquery', 'lib/components/base/modal'], function($, Modal){
             loadElements: function (type, id) {
 
                 setTimeout(function(){
-                    var htmlRender = '<div>Нужно сохранить Сделку...</div>';
+                    var htmlRender = '<div>Измененный div</div>';
                     $('#' + self.params.widget_code).html(htmlRender);
-                    console.log("Привет с гугл Диска!");
+                    console.log("Привет после пулреквеста!");
                 },500)
                 
                 return new Promise(_.bind(function (resolve, reject) {
